@@ -6,6 +6,13 @@ To begin load the model and dataset we will use for this workshop:
 ```{r, include=T}
 load( 'SensitivityProducts.RDATA')
 ```
+We will use the following packages:
+```{r, include=T}
+library(randomForest)
+library(tidyverse)
+library(gtools)
+library(ggplot2)
+```
 
 In this workshop, we will prepare a sensitivity analysis for the model FCH4_F_gC.rf. Take a look at the model:
 
