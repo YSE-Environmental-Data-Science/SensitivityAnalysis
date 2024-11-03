@@ -127,4 +127,4 @@ ggplot() + geom_smooth(data =P_F_1AT , aes( x=P_F, y=PRED) )
 ggplot() + geom_line(data =P_F_1AT , aes( x=P_F, y=PRED, color=Quantile, group=interaction(Quantile, Upland), linetype =Upland)  )
 
 ```
-Use this same workflow to explore the sensitivity of your model. Please provide a full report explaining how you fit your model and how variables where selected. Describe your final model results, including a correlation plot, variance importance plots, and sensitivity analyses. Please upload this report by March 25th 11:59 PM. This report will develop into the methods and results portion of your final project. 
+Use this same workflow to explore the sensitivity of your groups project's model. Please provide a presentation explaining how you fit your model (mtry?, ntree?) and how variables where selected (forward versus backward selection). Describe your final model results (variables in the final model, their importance, the %Var, observed versus predicted for testing and training data), including a correlation plot, variance importance plots, and sensitivity analyses. This report will develop into the methods and results portion of your final project. 
