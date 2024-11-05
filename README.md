@@ -24,7 +24,7 @@ The model includes monthly precipitation (P_f), mean temperature (TA_F), and a b
 Explore the conditions present within the dataset (fluxnet.new) used to build the model. First subset only the variables used in the final model:
 
 ```{r, include=T}
-model.vars <- fluxnet.new %>% select(  "YearMon","SITE", "P_F" ,"TA_F", "FCH4_F_gC", "Upland")
+model.vars <- fluxnet.new %>% as.data.frame %>%  select( P_F, TA_F,Upland)
 ```
 Next, we will summarise the conditions within the dataset by quantiles (0.25, 0.5, 0.75): NOTE THAT YOUR CATEGORICAL VARIABLE WILL NEED TO BE IN THE group_by() FUNCTION!
 
