@@ -43,7 +43,7 @@ model.vars.upper <- model.vars %>% group_by(Upland) %>% summarise(P_F = quantile
 
 ````
 
-Combine the individual cummaries into one dataframe:
+Combine the individual Summaries into one dataframe:
 
 ```{r, include=T}
 summary <- smartbind( model.vars.lower, model.vars.median, model.vars.upper)
